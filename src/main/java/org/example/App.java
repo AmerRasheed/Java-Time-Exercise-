@@ -1,6 +1,8 @@
 package org.example;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -65,10 +67,22 @@ LocalDate currentDate= LocalDate.now();
 LocalDate required= currentDate.plus(_4yrs7Mon29Days);
 
 System.out.println(required);
+//Exercise 9 Create a LocalTime object of the current time.
 
+        LocalDateTime localTime = LocalDateTime.now();
+        System.out.println(localTime);
+//Exercise 10 Extract the nanoseconds of a LocalTime object of current time. Print out the nanoseconds.
+
+        System.out.println(localTime.getNano());  // Nano seconds are 6490000000
+
+//Exercise 11 Create a LocalTime object from a String using the .parse() method.
+       /* String stringTime = "06-45-20";
+        LocalTime timeObject= LocalTime.parse(stringTime);
+        System.out.println(timeObject);
+        System.out.println(timeObject);*/
 //Extra assignment Create your own calendar for the year 2018.
 
-getCalendar(2018).forEach(System.out::println);
+//getCalendar(2018).forEach(System.out::println);
 
     }
 
